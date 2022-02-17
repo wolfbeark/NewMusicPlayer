@@ -1,0 +1,67 @@
+.currentMusicBox {
+  display: flex;
+  width: 100vw;
+  height: 150vh;
+  background-color: white;
+  z-index: 10;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  position: relative;
+}
+.previous_btn {
+  position: absolute;
+  overflow-y: hidden;
+  top: 5%;
+  left: 6.5%;
+  background-color: black;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.currentImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  overflow-y: hidden;
+  border-radius: 30px;
+  margin-bottom: 3em;
+}
+.currentImg--img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.current__songName {
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  font-weight: 800;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  height: 1.1em;
+  margin-bottom: 0.2em;
+}
+.current__singerName {
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  height: 1.1em;
+}

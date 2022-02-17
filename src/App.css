@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
-}
+@import "./pcStyles/reset.css";
+@import "./commonStyles/topNavBar.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import "./commonStyles/choicedSinger.css";
+@import "./commonStyles/currentMusic.css";
+:root {
+  --vh: 100%;
+  --vw: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "Bebas Neue", cursive;
+}
+.pcContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 150vh;
+  width: 100vw;
+  max-width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.m_App {
+  display: flex;
+  background-color: red;
+  width: calc(var(--vw, 1vw) * 100);
+  height: calc(var(--vh, 1vh) * 100);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a,
+link {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
 }

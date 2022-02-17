@@ -1,0 +1,252 @@
+.choicedSinger__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  max-width: 100%;
+  background-color: white;
+  align-items: center;
+}
+.choicedSinger--img {
+  width: 230px;
+  height: 230px;
+  background-color: green;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.choicedSinger__imgbox {
+  width: 800px;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.choicedSinger--select {
+  position: absolute;
+  width: 100px;
+  height: 50%;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0px;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  right: 0px;
+  animation-delay: 0.3s;
+  animation: pOffSelectSinger 0.3s ease-in-out forwards;
+}
+@keyframes pOffSelectSinger {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 50%;
+  }
+}
+.choicedSinger--select-long {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0px;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  right: 0px;
+}
+.choicedSinger--select span,
+.choicedSinger--select-long span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.choicedSinger__selectbox {
+  width: 100px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  animation: onselectBoxAni 0.2s ease-in-out forwards;
+}
+.choicedSinger__selectbox_off {
+  width: 100px;
+  height: 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  animation: offselectBoxAni 0.2s ease-in-out forwards;
+}
+.choicedSinger__selectbox div,
+.choicedSinger__selectbox_off div {
+  background-color: black;
+  width: 100%;
+  height: 30px;
+  margin: 10px 0px;
+  display: flex;
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+@keyframes onselectBoxAni {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    height: 200px;
+    opacity: 1;
+  }
+}
+@keyframes offselectBoxAni {
+  0% {
+    opacity: 1;
+    height: 200px;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+
+.choicedSinger__desc {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+}
+.choicedSinger__desc div {
+  background-color: white;
+  width: 20%;
+  height: 70%;
+  margin: 0px 1em;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  overflow-y: hidden;
+}
+.choicedSinger__desc div:first-child {
+  background-color: black;
+  color: white;
+}
+.choicedSinger__desc div:last-child {
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 5px 1px grey;
+}
+
+.choicedSinger_song {
+  width: 100%;
+  max-width: 100%;
+  height: 50%;
+  padding: 1em 3em;
+}
+.songList {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 10px;
+}
+.songList--item {
+  background-color: black;
+  width: 100%;
+  height: 20%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0.5em 0px 1em;
+  overflow-y: hidden;
+  position: relative;
+  box-shadow: none;
+  will-change: box-shadow;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.songList--item:hover {
+  box-shadow: 0px 0px 10px 2px black;
+  cursor: pointer;
+}
+.songImg {
+  width: 60px;
+  height: 60px;
+  border: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.songLikeCount {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+}
+.songLikeCount span {
+  overflow-y: hidden;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+}
+.songLikeCount span:first-child {
+  color: whitesmoke;
+}
+.songLikeCount span:last-child {
+  width: 80px;
+  text-align: right;
+  padding-right: 2px;
+  color: whitesmoke;
+}
+.songInfo {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  color: white;
+}
+.songInfo div {
+  font-weight: 900;
+  font-size: 30px;
+  overflow-y: hidden;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px white;
+}
+.songInfo div:link {
+  text-decoration-line: none;
+}
+.songInfo span {
+  font-weight: 700;
+  font-size: 20px;
+  overflow-y: hidden;
+  color: rgba(255, 255, 255, 0.5);
+}
