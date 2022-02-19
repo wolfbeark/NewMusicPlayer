@@ -12,7 +12,7 @@ const singer_1 = {
       songLikeCount : '29,162',
       songPlayTime : '03:27',
       songImgShadow : 'rgba(0, 191, 235, 255)',
-      song: '/musicRes/Happier.mp3'
+      song: '/build/musicRes/Happier.mp3'
     },
     {
       songName : 'PERFECT',
@@ -20,7 +20,7 @@ const singer_1 = {
       songLikeCount : '100,477',
       songPlayTime : '04:23',
       songImgShadow : 'rgba(0, 191, 235, 255)',
-      song: '/musicRes/Perfect.mp3'
+      song: `${process.env.PUBLIC_URL + "/musicRes/Perfect.mp3"}`
     },
     {
       songName : 'SHIVERS',
