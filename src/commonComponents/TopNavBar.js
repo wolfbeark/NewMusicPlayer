@@ -1,8 +1,8 @@
 
-import React, { memo ,useState } from "react";
+import React, { memo ,useEffect,useState } from "react";
 
 function TopNavBar(props){
-
+    
     return(
         <div className="topNavBar__Box">
             <div className={
@@ -24,11 +24,15 @@ function TopNavBar(props){
     );
     function Clock(){
         let [date, setDate] = useState(new Date());
-        function setNewDate(){
-            let _date = new Date();
-            setDate(_date)
-        }
-        setInterval(setNewDate, 1000);
+        useEffect(()=>{
+            const timeUpdate = setInterval(() => {
+                setDate(new Date());
+            }, 1000);
+            return ()=>{
+                clearInterval(timeUpdate);
+            };
+        }, [])
+        
         return(
             <span>
                 {date.toLocaleTimeString(

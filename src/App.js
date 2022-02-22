@@ -16,7 +16,7 @@ function App() {
   let [isPC, setPC] = useState(null);
   let [singerData, setSingerData] = useState([]);
   let [selectedNum, setSelectedNum] = useState(0);
-  let [isClickedMusic, setClickedMusic] = useState(false)
+  let [isClickedMusic, setClickedMusic] = useState(false);
   let [currentMusic, setCurrentMusic] = useState({});
   let history = useHistory();
   useEffect(()=>{
@@ -54,7 +54,11 @@ function App() {
       {isPC
       ? (isClickedMusic === false
         ? <div className='pcContainer'>
-          <TopNavBar deviceType={isPC}></TopNavBar>
+          <TopNavBar deviceType={isPC}
+            isClickedMusic={isClickedMusic}
+            style={isClickedMusic === false
+            ? {display: 'block'}
+            : {display: 'none'}}></TopNavBar>
           <ChoicedSinger 
           singerData={singerData} 
           selectedNum={selectedNum}
@@ -72,7 +76,6 @@ function App() {
         </div>
         : 
         <div className='pcContainer' >
-          <TopNavBar deviceType={isPC}></TopNavBar>
           <CurrentMusic curSongArr={currentMusic}
             goBack={setClickedMusic}
           >

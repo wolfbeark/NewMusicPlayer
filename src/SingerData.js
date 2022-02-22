@@ -12,7 +12,7 @@ const singer_1 = {
       songLikeCount : '29,162',
       songPlayTime : '03:27',
       songImgShadow : 'rgba(0, 191, 235, 255)',
-      song: '/build/musicRes/Happier.mp3'
+      song: '/musicRes/Happier.mp3'
     },
     {
       songName : 'PERFECT',
@@ -20,21 +20,23 @@ const singer_1 = {
       songLikeCount : '100,477',
       songPlayTime : '04:23',
       songImgShadow : 'rgba(0, 191, 235, 255)',
-      song: `${process.env.PUBLIC_URL + "/musicRes/Perfect.mp3"}`
+      song: "/musicRes/Perfect.mp3"
     },
     {
       songName : 'SHIVERS',
       songImg : 'https://blog.kakaocdn.net/dn/zs8iY/btrl1JYkVh0/HBnzZKZVTZtwskeFI0BWo1/img.jpg',
       songLikeCount : '27,012',
       songPlayTime : '03:28',
-      songImgShadow : 'rgba(221, 24, 17, 255)'
+      songImgShadow : 'rgba(221, 24, 17, 255)',
+      song: "/musicRes/Shivers.mp3"
     },
     {
       songName : 'AFTERGLOW',
       songImg : 'https://img.discogs.com/i9cqZRMr5y_9OKwJudUW0BIcRns=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16606329-1608757048-2409.jpeg.jpg',
       songLikeCount : '10,824',
       songPlayTime : '03:06',
-      songImgShadow : 'rgba(102, 105, 106, 255)'
+      songImgShadow : 'rgba(102, 105, 106, 255)',
+      song: "/musicRes/Afterglow.mp3"
     }],
     imgShadow : "rgb(115, 130, 135)"
   }
@@ -49,29 +51,32 @@ const singer_2 = {
         songImg: 'https://image.bugsm.co.kr/album/images/500/156510/15651091.jpg',
         songLikeCount : '49,001',
         songPlayTime : '03:25',
-        songImgShadow : 'rgb(24, 90, 88)'
+        songImgShadow : 'rgb(24, 90, 88)',
+        song: "/musicRes/Tiny Riot.mp3"
     },
     {
         songName : 'July',
         songImg : 'https://linkstorage.linkfire.com/medialinks/images/c5adf169-c264-4b2f-85ac-d3cad4934627/artwork-440x440.jpg',
         songLikeCount : '499',
         songPlayTime : '04:09',
-        songImgShadow : '#1C4980'
+        songImgShadow : '#1C4980',
+        song: "/musicRes/July.mp3"
     },
     {
         songName : 'More',
         songImg : 'https://image.bugsm.co.kr/album/images/200/40382/4038290.jpg?version=20211231031804.0',
         songLikeCount : '6,155',
         songPlayTime : '03:49',
-        songImgShadow : '#CC6528'
+        songImgShadow : '#CC6528',
+        song: "/musicRes/More.mp3"
     },
     {
-        songName : `This Woman's work`,
+        songName : `Whirlwind`,
         songImg : 'https://images.genius.com/e881508701726d210cc18b02e84b1f3b.1000x1000x1.jpg',
         songLikeCount : '3,205',
         songPlayTime : '03:28',
-        songImgShadow : '#C5C9C8'
-
+        songImgShadow : '#C5C9C8',
+        song: "/musicRes/Whirlwind.mp3"
     }],
     imgShadow : "rgb(20, 14, 14)"
 }
@@ -85,28 +90,32 @@ const singer_3 = {
         songImg : 'https://m.media-amazon.com/images/I/51PrHEhWoYL.jpg',
         songLikeCount : '2,626',
         songPlayTime : '03:06',
-        songImgShadow : 'rgba(255, 255, 255, 255)'
+        songImgShadow : 'rgba(255, 255, 255, 255)',
+        song: "/musicRes/Wordplay.mp3"
     },
     {
         songName : `I'm yours`,
         songImg : 'https://img.discogs.com/GZ8Dy-0DfMyh4ccX-xHo3gt8Qb4=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1348024-1420573522-3987.jpeg.jpg',
         songLikeCount : '88,616',
         songPlayTime : '04:03',
-        songImgShadow : 'rgba(255, 255, 255, 255)'
+        songImgShadow : 'rgba(255, 255, 255, 255)',
+        song: "/musicRes/I'm Yours.mp3"
     },
     {
         songName : 'Be Where Your Feet Are',
         songImg : 'https://i.scdn.co/image/ab67616d0000b2730fa1a1cb7fef0a002f934084',
         songLikeCount : '284',
         songPlayTime : '03:15',
-        songImgShadow : 'rgba(255, 255, 255, 255)'
+        songImgShadow : 'rgba(255, 255, 255, 255)',
+        song: "/musicRes/Be Where Your Feet Are.mp3"
     },
     {
         songName : 'Have it all',
         songImg : 'https://images-eu.ssl-images-amazon.com/images/I/71JO-49TtwL._AC_UL600_SR600,600_.jpg',
         songLikeCount : '14,801',
         songPlayTime : '03:46',
-        songImgShadow : 'rgba(255, 255, 255, 255)'
+        songImgShadow : 'rgba(255, 255, 255, 255)',
+        song: "/musicRes/Have It All.mp3"
     }],
     imgShadow : "rgb(84, 167, 175)"
 }
@@ -122,6 +131,7 @@ const singer_4 = {
         songLikeCount : '159,184',
         songPlayTime : '04:55',
         songImgShadow : 'rgba(255, 255, 255, 255)',
+        song: "/musicRes/Hello.mp3"
     },
     {
         songName : 'Easy on me',
@@ -129,21 +139,23 @@ const singer_4 = {
         songLikeCount : '22,409',
         songPlayTime : '03:45',
         songImgShadow : '#274952',
-        
+        song: "/musicRes/Easy On Me.mp3"
     },
     {
         songName : 'Someone like you',
         songImg : 'https://ww.namu.la/s/59f8daef0cc9da5e62e39e4626f92b5172dbcd43277071d1f34a83c93eb92baf8f78271f89b8e705f2b5b313622e54ab9cb1c9c924f76809017ca5364e7e89d2af876f678b4dc12d95177490b8d146751dd2a95e426352e210adf9e6c35dc7a4',
         songLikeCount : '193,344',
         songPlayTime : '04:47',
-        songImgShadow : 'rgba(255, 255, 255, 255)'
+        songImgShadow : 'rgba(255, 255, 255, 255)',
+        song: "/musicRes/Someone Like You.mp3"
     },
     {
         songName : 'Rolling in the deep',
         songImg : 'https://i1.sndcdn.com/artworks-000022631306-gom0xe-t500x500.jpg',
         songLikeCount : '90,187',
         songPlayTime : '03:49',
-        songImgShadow : 'rgba(255, 255, 255, 255)'
+        songImgShadow : 'rgba(255, 255, 255, 255)',
+        song: "/musicRes/Rolling In The Deep.mp3"
     }],
     imgShadow : "rgb(201, 146, 108)"
 }
